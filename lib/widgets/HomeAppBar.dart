@@ -29,6 +29,9 @@ class HomeAppBar extends StatelessWidget{
                ),
                Spacer(),
                Badge(
+                badgeColor: Colors.red,
+                padding: EdgeInsets.all(7),
+                badgeContent: Text("3"),
                 child:InkWell(
                   onTap: () {
                     Navigator.pushNamed(context, "cartPage");
